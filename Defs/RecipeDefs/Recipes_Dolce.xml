@@ -125,7 +125,7 @@
     <workSkill>Cooking</workSkill>
   </RecipeDef>
   <RecipeDef ParentName="CookDolceBase">
-    <defName>CookPannacotta2</defName>
+    <defName>CookPannacottachoco</defName>
     <label>チョコレートのパンナコッタを作る</label>
     <description>チョコレートのパンナコッタを作る</description>
     <jobString>チョコレートのパンナコッタを作っている</jobString>
@@ -171,7 +171,7 @@
     </fixedIngredientFilter>
     <!-- 完成品 -->
     <products>
-      <ITL_Pannacotta2>6</ITL_Pannacotta2>
+      <ITL_Pannacottachoco>6</ITL_Pannacottachoco>
     </products>
     <workSkill>Cooking</workSkill>
   </RecipeDef>

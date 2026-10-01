@@ -45,11 +45,11 @@
     </ingestible>
   </ThingDef>
   <ThingDef ParentName="ITL_DolceBase">
-    <defName>ITL_Pannacotta2</defName>
+    <defName>ITL_Pannacottachoco</defName>
     <label>チョコレートのパンナコッタ</label>
     <description>生クリームをゼラチンで固めてチョコレートソースをかけたドルチェ。</description>
     <graphicData>
-      <texPath>Things/Item/Meal/Pannacotta2</texPath>
+      <texPath>Things/Item/Meal/Pannacottachoco</texPath>
       <graphicClass>Graphic_Single</graphicClass>
 	  <drawSize>(0.8,0.8)</drawSize>
     </graphicData>
