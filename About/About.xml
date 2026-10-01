@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>イタリア食文化</name>
+	<author>八十吉</author>
+	<url>none</url>
+	<supportedVersions>
+	  	<li>1.6</li>
+	</supportedVersions>
+	<description>イタリア料理とその材料を追加する。</description>
+	<packageId>yasokichi.syokubunka.italian</packageId>
+	
+	<modDependencies>
+		<li>
+			<packageId>yasokichi.syokubunka</packageId>
+			<displayName>食文化</displayName>
+		</li>
+	</modDependencies>
+	<loadAfter>
+		<li>yasokichi.syokubunka</li>
+	</loadAfter>	
+	
+</ModMetaData>

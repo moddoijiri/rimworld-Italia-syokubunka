@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <ThingDef ParentName="SBK_KihonzairyouBase">
+    <defName>ITL_Namapasta</defName>
+    <label>生パスタ</label>
+    <description>スパゲッティ、タリアテッレ、ペンネ、ブカティーニ等、様々な種類の生パスタ。</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/Namapasta</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>1.1</MarketValue>
+      <Mass>0.03</Mass>
+      <Nutrition>0.05</Nutrition>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>100</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <ThingDef ParentName="SBK_KihonzairyouBase">
+    <defName>ITL_Cheeseset</defName>
+    <label>チーズ</label>
+    <description>パルミジャーノ・レッジャーノ、ペコリーノ・ロマーノ、モッツァレラ、マスカルポーネ等、様々な種類のチーズ。</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/Cheeseset</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>1.1</MarketValue>
+      <Mass>0.03</Mass>
+      <Nutrition>0.05</Nutrition>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>100</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <ThingDef ParentName="SBK_KihonzairyouBase">
+    <defName>ITL_Butter</defName>
+    <label>バター</label>
+    <description>濃厚なバター。</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/Butter</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>1.1</MarketValue>
+      <Mass>0.03</Mass>
+      <Nutrition>0.05</Nutrition>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>100</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <ThingDef ParentName="SBK_KihonzairyouBase">
+    <defName>ITL_Oliveoil</defName>
+    <label>オリーブ油</label>
+    <description>オリーブの実から抽出した香り高い油。</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/Oliveoil</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>1.1</MarketValue>
+      <Mass>0.03</Mass>
+      <Nutrition>0.05</Nutrition>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>100</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <ThingDef ParentName="SBK_KihonzairyouBase">
+    <defName>ITL_Pancetta</defName>
+    <label>パンチェッタ</label>
+    <description>豚のバラ肉の塊に塩をすり込んで熟成させたもの。</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/Pancetta</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>1.1</MarketValue>
+      <Mass>0.03</Mass>
+      <Nutrition>0.05</Nutrition>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>100</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+  </ThingDef>
+</Defs>

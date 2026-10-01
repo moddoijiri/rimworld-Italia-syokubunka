@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  
+  <ThingCategoryDef>
+    <defName>ITL_Ryouri</defName>
+    <label>イタリア料理</label>
+    <parent>FoodMeals</parent>
+    <iconPath>Things/Item/Meal/VongoleRosso</iconPath>
+  </ThingCategoryDef>
+  <ThingCategoryDef>
+    <defName>ITL_Dolce</defName>
+    <label>ドルチェ</label>
+    <parent>FoodMeals</parent>
+    <iconPath>Things/Item/Meal/Tiramisu</iconPath>
+  </ThingCategoryDef>
+</Defs>

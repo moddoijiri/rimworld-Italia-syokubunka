@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- 追加のJoyKind -->
+  <JoyKindDef>
+    <defName>IngestingEspresso</defName>
+    <label>エスプレッソの香り</label>
+  </JoyKindDef>
+
+  <!-- 追加のJoyGiver-->
+  <JoyGiverDef>
+    <defName>DrinkEspresso</defName>
+    <giverClass>JoyGiver_Ingest</giverClass>
+    <baseChance>4.0</baseChance>
+    <thingDefs>
+      <li>ITL_Espresso</li>
+    </thingDefs>
+    <joyKind>IngestingEspresso</joyKind>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+  </JoyGiverDef>
+
+</Defs>

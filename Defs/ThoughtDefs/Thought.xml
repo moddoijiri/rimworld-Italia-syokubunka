@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+  <ThoughtDef>
+    <defName>BuffEspressoThought</defName>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <hediff>BuffCaffeine</hediff>
+    <stages>
+      <li>
+        <label>香りを楽しみつつエスプレッソを飲んだ</label>
+        <description>豊かな香りと苦みのバランスが良いエスプレッソだった</description>
+        <baseMoodEffect>2</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+</Defs>

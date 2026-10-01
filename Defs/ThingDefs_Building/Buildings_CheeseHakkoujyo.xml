@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+
+<ThingDef ParentName="BuildingBase">
+    <defName>ITL_Nyuuseihinseizoujyo</defName>
+    <label>乳製品製造所</label>
+    <description>チーズ・バターを作る設備。適温10～35℃。</description>
+    <graphicData>
+      <texPath>Things/Building/Nyuuseihinseizoujyo</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(2,2)</drawSize>
+      <damageData>
+        <rect>(0.05,0.1,0.9,0.9)</rect>
+      </damageData>
+    </graphicData>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <thingCategories>
+      <li>BuildingsProduction</li>
+    </thingCategories>
+    <altitudeLayer>Building</altitudeLayer>
+<drawerType>MapMeshAndRealTime</drawerType>
+    <passability>PassThroughOnly</passability>
+    <canOverlapZones>false</canOverlapZones>
+    <fillPercent>0.45</fillPercent>
+    <pathCost>60</pathCost>
+    <rotatable>true</rotatable>
+    <size>(2,2)</size>
+    <stuffCategories>
+     <li>Woody</li>
+    </stuffCategories>
+    <costStuffCount>50</costStuffCount>
+    <useHitPoints>true</useHitPoints>
+    <tickerType>Rare</tickerType>
+    <statBases>
+      <Cleanliness>-13</Cleanliness>
+      <WorkToBuild>600</WorkToBuild>
+      <Mass>10</Mass>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+    </statBases>
+    <designationCategory>Production</designationCategory>
+    <comps>
+      <li Class="CompProperties_Forbiddable"/>
+      <li Class="ProcessorFramework.CompProperties_Processor">
+    <capacity>30</capacity>
+    <independentProcesses>true</independentProcesses>
+    <parallelProcesses>true</parallelProcesses>
+    <dropIngredients>false</dropIngredients>
+    <showProductIcon>true</showProductIcon>
+    <barOffset>(0.0, 0.25)</barOffset>
+    <barScale>(1.0, 1.0)</barScale>
+    <colorCoded>false</colorCoded>
+    <processes>
+      <li>Cheesehakkou</li>
+	  <li>Butterseizou</li>
+    </processes>
+  </li>
+    </comps>
+    <researchPrerequisites>
+      <li>ITL_KihonRS</li>
+    </researchPrerequisites>
+  </ThingDef>
+
+
+<ProcessorFramework.ProcessDef>
+  <defName>Cheesehakkou</defName>
+  <thingDef>ITL_Cheeseset</thingDef>
+  <ingredientFilter>
+    <thingDefs>
+      <li>Milk</li>
+    </thingDefs>
+  </ingredientFilter>
+  <processDays>14</processDays> <!-- in days, a day is 60,000 ticks -->
+  <capacityFactor>1.0</capacityFactor>
+  <efficiency>0.8</efficiency>
+  <usesTemperature>true</usesTemperature>
+  <temperatureSafe>-10.0~40.0</temperatureSafe>
+  <temperatureIdeal>5.0~35.0</temperatureIdeal>
+  <ruinedPerDegreePerHour>2.5</ruinedPerDegreePerHour> <!-- percent per degree per hour -->
+  <speedBelowSafe>0.1</speedBelowSafe>
+  <speedAboveSafe>1.0</speedAboveSafe>
+  <sunFactor>1.0~1.0</sunFactor>
+  <rainFactor>1.0~1.0</rainFactor>
+  <snowFactor>1.0~1.0</snowFactor>
+  <windFactor>1.0~1.0</windFactor>
+  <unpoweredFactor>0.0</unpoweredFactor>
+  <unfueledFactor>0.0</unfueledFactor>
+  <powerUseFactor>1.0</powerUseFactor>
+  <fuelUseFactor>1.0</fuelUseFactor>
+  <filledGraphicSuffix></filledGraphicSuffix>
+  <usesQuality>false</usesQuality>
+  <qualityDays>(1, 2, 3, 4, 5, 6, 7)</qualityDays>
+  <color>(255, 255, 255)</color> <!-- 0-255 or 0.0-1.0 -->
+  <customLabel></customLabel>
+  <destroyChance>0.0</destroyChance>
+  
+</ProcessorFramework.ProcessDef>
+
+<ProcessorFramework.ProcessDef>
+  <defName>Butterseizou</defName>
+  <thingDef>ITL_Butter</thingDef>
+  <ingredientFilter>
+    <thingDefs>
+      <li>Milk</li>
+    </thingDefs>
+  </ingredientFilter>
+  <processDays>5</processDays> <!-- in days, a day is 60,000 ticks -->
+  <capacityFactor>3.0</capacityFactor>
+  <efficiency>0.5</efficiency>
+  <usesTemperature>true</usesTemperature>
+  <temperatureSafe>-10.0~40.0</temperatureSafe>
+  <temperatureIdeal>5.0~35.0</temperatureIdeal>
+  <ruinedPerDegreePerHour>2.5</ruinedPerDegreePerHour> <!-- percent per degree per hour -->
+  <speedBelowSafe>0.1</speedBelowSafe>
+  <speedAboveSafe>1.0</speedAboveSafe>
+  <sunFactor>1.0~1.0</sunFactor>
+  <rainFactor>1.0~1.0</rainFactor>
+  <snowFactor>1.0~1.0</snowFactor>
+  <windFactor>1.0~1.0</windFactor>
+  <unpoweredFactor>0.0</unpoweredFactor>
+  <unfueledFactor>0.0</unfueledFactor>
+  <powerUseFactor>1.0</powerUseFactor>
+  <fuelUseFactor>1.0</fuelUseFactor>
+  <filledGraphicSuffix></filledGraphicSuffix>
+  <usesQuality>false</usesQuality>
+  <qualityDays>(1, 2, 3, 4, 5, 6, 7)</qualityDays>
+  <color>(255, 255, 255)</color> <!-- 0-255 or 0.0-1.0 -->
+  <customLabel></customLabel>
+  <destroyChance>0.0</destroyChance>
+  
+</ProcessorFramework.ProcessDef>
+</Defs>

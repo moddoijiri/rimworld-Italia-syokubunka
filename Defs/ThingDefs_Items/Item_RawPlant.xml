@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <ThingDef ParentName="SBK_RawPlantBase">
+    <defName>ITL_RawNinniku</defName>
+    <label>にんにく</label>
+    <description>料理の香りづけに使う。イタリア料理にかかせない食材。</description>
+    <graphicData>
+      <texPath>Things/Item/RawPlant/RawNinniku</texPath>
+	  <drawSize>(0.8,0.8)</drawSize>
+    </graphicData>
+    <statBases>
+      <MarketValue>1.1</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>60</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+  </ThingDef>
+  <ThingDef ParentName="SBK_RawPlantBase">
+    <defName>ITL_RawBasil</defName>
+    <label>バジル</label>
+    <description>トマトと相性の良いハーブ。</description>
+    <graphicData>
+      <texPath>Things/Item/RawPlant/RawBasil</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>1.1</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>60</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+  </ThingDef>
+  <ThingDef ParentName="SBK_RawPlantBase">
+    <defName>ITL_RawYamadoritakemodoki</defName>
+    <label>ヤマドリタケモドキ</label>
+    <description>日本にも分布するポルチーニに似たキノコ。</description>
+    <graphicData>
+      <texPath>Things/Item/RawPlant/RawYamadoritakemodoki</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>1.1</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>60</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+  </ThingDef>
+  <ThingDef ParentName="SBK_RawPlantBase">
+    <defName>ITL_RawKosyou</defName>
+    <label>胡椒</label>
+    <description>強い香りと辛みのある香辛料。様々な料理に利用される。</description>
+    <graphicData>
+      <texPath>Things/Item/RawPlant/RawKosyou</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>1.1</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>60</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+  </ThingDef>
+  <ThingDef ParentName="SBK_RawPlantBase">
+    <defName>ITL_RawCoffeemame</defName>
+    <label>コーヒー豆</label>
+    <description>エスプレッソの原料。</description>
+    <graphicData>
+      <texPath>Things/Item/RawPlant/RawCoffeemame</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>1.1</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>60</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+  </ThingDef>
+</Defs>

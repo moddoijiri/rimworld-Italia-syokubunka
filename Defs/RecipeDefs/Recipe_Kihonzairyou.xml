@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <RecipeDef ParentName="CookItaliaZairyouBase">
+    <defName>CookNamapasta</defName>
+    <label>生パスタを打つ</label>
+    <description>生パスタを打つ。</description>
+    <jobString>生パスタを打っている</jobString>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <requiredGiverWorkType>Cooking</requiredGiverWorkType>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+    <workAmount>300</workAmount>
+	<recipeUsers>
+		<li>ElectricStove</li>
+	  	<li>FueledStove</li>
+    </recipeUsers>
+    <!-- 材料 -->
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SBK_RawKomugi</li>
+          </thingDefs>
+        </filter>
+        <count>0.25</count>
+      </li>
+	  <li>
+        <filter>
+          <categories>
+            <li>EggsUnfertilized</li>
+          </categories>
+        </filter>
+        <count>0.5</count>
+      </li>
+    </ingredients>
+	<fixedIngredientFilter>
+      <thingDefs>
+        <li>SBK_RawKomugi</li>
+      </thingDefs>
+	  <categories>
+        <li>EggsUnfertilized</li>
+        <li>EggsFertilized</li>
+      </categories>
+    </fixedIngredientFilter>
+    <!-- 完成品 -->
+    <products>
+      <ITL_Namapasta>40</ITL_Namapasta>
+    </products>
+    <workSkill>Cooking</workSkill>
+  </RecipeDef>
+  <RecipeDef ParentName="CookItaliaZairyouBase">
+    <defName>CookOliveoil</defName>
+    <label>オリーブ油を抽出する</label>
+    <description>オリーブ油を抽出する。</description>
+    <jobString>オリーブ油を抽出している</jobString>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <requiredGiverWorkType>Cooking</requiredGiverWorkType>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+    <workAmount>300</workAmount>
+	<recipeUsers>
+		<li>Brewery</li>
+    </recipeUsers>
+    <!-- 材料 -->
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ITL_RawOlive</li>
+          </thingDefs>
+        </filter>
+        <count>0.25</count>
+      </li>
+    </ingredients>
+	<fixedIngredientFilter>
+      <thingDefs>
+        <li>ITL_RawOlive</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <!-- 完成品 -->
+    <products>
+      <ITL_Oliveoil>25</ITL_Oliveoil>
+    </products>
+    <workSkill>Cooking</workSkill>
+  </RecipeDef>
+  
+</Defs>

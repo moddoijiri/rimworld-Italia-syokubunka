@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <!--料理-->
+    <ThingDef Name="ITL_MealBase_Rottable" Abstract="True">
+      <thingClass>ThingWithComps</thingClass>
+      <category>Item</category>
+      <drawerType>MapMeshOnly</drawerType>
+      <useHitPoints>true</useHitPoints>
+      <healthAffectsPrice>false</healthAffectsPrice>
+      <selectable>true</selectable>
+      <statBases>
+        <MaxHitPoints>60</MaxHitPoints>
+        <Flammability>0.8</Flammability>
+        <Beauty>0</Beauty>
+        <Mass>0.44</Mass>
+        <DeteriorationRate>10</DeteriorationRate>
+      </statBases>
+      <altitudeLayer>Item</altitudeLayer>
+      <stackLimit>10</stackLimit>
+      <tickerType>Rare</tickerType>
+      <socialPropernessMatters>true</socialPropernessMatters>
+      <thingCategories>
+        <li>ITL_Ryouri</li>
+      </thingCategories>
+      <alwaysHaulable>true</alwaysHaulable>
+      <comps>
+        <li Class="CompProperties_Forbiddable" />
+        <li Class="CompProperties_FoodPoisonable" />
+        <li MayRequire="Ludeon.RimWorld.Anomaly" Class="CompProperties_MetalhorrorInfectible" />
+        <li Class="CompProperties_Ingredients">
+          <splitTransferableFoodKind>true</splitTransferableFoodKind>
+        </li>
+        <li Class="CompProperties_Rottable">
+          <daysToRotStart>4</daysToRotStart>
+          <rotDestroys>true</rotDestroys>
+        </li>
+      </comps>
+      <pathCost>14</pathCost>
+      <allowedArchonexusCount>40</allowedArchonexusCount>
+      <resourceReadoutPriority>Last</resourceReadoutPriority>
+      <drawGUIOverlay>true</drawGUIOverlay>
+      <uiIconForStackCount>1</uiIconForStackCount>
+      <ingestible>
+        <foodType>Meal</foodType>
+        <maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
+        <defaultNumToIngestAtOnce>1</defaultNumToIngestAtOnce>
+        <optimalityOffsetHumanlikes>16</optimalityOffsetHumanlikes>
+        <optimalityOffsetFeedingAnimals>-25</optimalityOffsetFeedingAnimals>
+        <ingestSound>Meal_Eat</ingestSound>
+      </ingestible>
+      <tradeability>None</tradeability>
+    </ThingDef>
+	
+	<!--ドルチェ-->
+	<ThingDef Name="ITL_DolceBase" Abstract="True">
+      <thingClass>ThingWithComps</thingClass>
+      <category>Item</category>
+      <drawerType>MapMeshOnly</drawerType>
+      <useHitPoints>true</useHitPoints>
+      <healthAffectsPrice>false</healthAffectsPrice>
+      <selectable>true</selectable>
+      <statBases>
+        <MaxHitPoints>60</MaxHitPoints>
+        <Flammability>0.8</Flammability>
+        <Beauty>0</Beauty>
+        <Mass>0.44</Mass>
+        <DeteriorationRate>10</DeteriorationRate>
+      </statBases>
+      <altitudeLayer>Item</altitudeLayer>
+      <stackLimit>10</stackLimit>
+      <tickerType>Rare</tickerType>
+      <socialPropernessMatters>true</socialPropernessMatters>
+      <thingCategories>
+        <li>ITL_Dolce</li>
+      </thingCategories>
+      <alwaysHaulable>true</alwaysHaulable>
+      <comps>
+        <li Class="CompProperties_Forbiddable" />
+        <li Class="CompProperties_FoodPoisonable" />
+        <li MayRequire="Ludeon.RimWorld.Anomaly" Class="CompProperties_MetalhorrorInfectible" />
+        <li Class="CompProperties_Ingredients">
+          <splitTransferableFoodKind>true</splitTransferableFoodKind>
+        </li>
+        <li Class="CompProperties_Rottable">
+          <daysToRotStart>4</daysToRotStart>
+          <rotDestroys>true</rotDestroys>
+        </li>
+      </comps>
+      <pathCost>14</pathCost>
+      <allowedArchonexusCount>40</allowedArchonexusCount>
+      <resourceReadoutPriority>Last</resourceReadoutPriority>
+      <drawGUIOverlay>true</drawGUIOverlay>
+      <uiIconForStackCount>1</uiIconForStackCount>
+      <ingestible>
+        <foodType>Meal</foodType>
+        <maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
+        <defaultNumToIngestAtOnce>1</defaultNumToIngestAtOnce>
+        <optimalityOffsetHumanlikes>16</optimalityOffsetHumanlikes>
+        <optimalityOffsetFeedingAnimals>-25</optimalityOffsetFeedingAnimals>
+        <ingestSound>Meal_Eat</ingestSound>
+      </ingestible>
+      <tradeability>None</tradeability>
+    </ThingDef>
+  </Defs>

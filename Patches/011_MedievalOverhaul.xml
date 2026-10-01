@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+  <!--Medieval Overhaulを導入して高度な冷暖房が使えない場合に備えて、醸造等の温度設定を無効にする-->
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Medieval Overhaul</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ProcessorFramework.ProcessDef[defName="WineJyouzou"]/usesTemperature</xpath>
+          <value>
+            <usesTemperature>false</usesTemperature>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="ITL_CheeseHakkoujyo"]/description</xpath>
+          <value>
+            <description>ミルクを発酵熟成させてチーズを作る設備。</description>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ProcessorFramework.ProcessDef[defName="Cheesehakkou"]/usesTemperature</xpath>
+          <value>
+            <usesTemperature>false</usesTemperature>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="ITL_Pancettatana"]/description</xpath>
+          <value>
+            <description>パンチェッタを熟成させる棚。</description>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ProcessorFramework.ProcessDef[defName="PancettaJyukusei"]/usesTemperature</xpath>
+          <value>
+            <usesTemperature>false</usesTemperature>
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+</Patch>

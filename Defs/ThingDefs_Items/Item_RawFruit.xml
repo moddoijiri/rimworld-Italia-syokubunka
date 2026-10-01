@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <ThingDef ParentName="SBK_RawFruitBase">
+    <defName>ITL_RawBudou</defName>
+    <label>ぶどう</label>
+    <description>ワインの原料。</description>
+    <graphicData>
+      <texPath>Things/Item/RawFruit/RawBudou</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>1.1</MarketValue>
+    </statBases>
+    <ingestible>
+      <preferability>NeverForNutrition</preferability>
+    </ingestible>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>6</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+  </ThingDef>
+  <ThingDef ParentName="SBK_RawFruitBase">
+    <defName>ITL_RawOlive</defName>
+    <label>オリーブの実</label>
+    <description>オリーブ油の原料。</description>
+    <graphicData>
+      <texPath>Things/Item/RawFruit/RawOlive</texPath>
+    </graphicData>
+	<ingestible>
+      <preferability>NeverForNutrition</preferability>
+    </ingestible>
+    <statBases>
+      <MarketValue>1.1</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>60</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+  </ThingDef>
+  <ThingDef ParentName="SBK_RawFruitBase">
+    <defName>ITL_RawKinomi</defName>
+    <label>木の実</label>
+    <description>アーモンド、クルミ、ヘーゼルナッツ、カシューナッツ等の木の実類。</description>
+    <graphicData>
+      <texPath>Things/Item/RawFruit/RawKinomi</texPath>
+    </graphicData>
+	<ingestible>
+      <preferability>NeverForNutrition</preferability>
+    </ingestible>
+    <statBases>
+      <MarketValue>1.1</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>60</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+  </ThingDef>
+</Defs>
